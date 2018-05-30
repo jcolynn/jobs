@@ -5,19 +5,20 @@ import {
   View,
   Text,
   StyleSheet,
+  SafeAreaView
 } from 'react-native';
 
 export default class AuthScreen extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <Text>I'm the AuthScreen component</Text>
         <Text>I'm the AuthScreen component</Text>
         <Text>I'm the AuthScreen component</Text>
         <Text>I'm the AuthScreen component</Text>
         <Text>I'm the AuthScreen component</Text>
         <Text>I'm the AuthScreen component</Text>
-      </View>
+      </SafeAreaView>
     );
   }
 }

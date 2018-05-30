@@ -5,6 +5,7 @@ import {
   View,
   Text,
   StyleSheet,
+  Platform
 } from 'react-native';
 import { Button } from 'react-native-elements';
 
@@ -18,8 +19,11 @@ export default class ReviewScreen extends Component {
           title="Settings"
           onPress = { () => props.navigation.navigate('settings')}
           backgroundColor = "rgba(0,0,0,0)"
-          color="rgba(0,125,125,1)"
-        />)
+          color="rgba(0,125,255,1)"
+        />),
+      style: {
+        marginTop: Platform.OS === 'android' ? 24 : 0
+      }
     };
   }
 
