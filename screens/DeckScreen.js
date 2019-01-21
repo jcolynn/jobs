@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import {
-  View,
+  SafeAreaView,
   Text,
   StyleSheet,
 } from 'react-native';
@@ -10,7 +10,7 @@ import {
 export default class DeckScreen extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <Text>I'm the DeckScreen component</Text>
         <Text>I'm the DeckScreen component</Text>
         <Text>I'm the DeckScreen component</Text>
@@ -18,7 +18,7 @@ export default class DeckScreen extends Component {
         <Text>I'm the DeckScreen component</Text>
         <Text>I'm the DeckScreen component</Text>
         <Text>I'm the DeckScreen component</Text>
-      </View>
+      </SafeAreaView>
     );
   }
 }

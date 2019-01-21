@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import {
-  View,
+  SafeAreaView,
   Text,
   StyleSheet,
 } from 'react-native';
@@ -10,14 +10,14 @@ import {
 export default class MapScreen extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <Text>I'm the MapScreen component</Text>
         <Text>I'm the MapScreen component</Text>
         <Text>I'm the MapScreen component</Text>
         <Text>I'm the MapScreen component</Text>
         <Text>I'm the MapScreen component</Text>
         <Text>I'm the MapScreen component</Text>
-      </View>
+      </SafeAreaView>
     );
   }
 }

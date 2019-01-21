@@ -14,15 +14,22 @@ export default class ReviewScreen extends Component {
 
     return {
       headerTitle: 'Review Jobs',
+      headerStyle: {
+        backgroundColor: '#29524A'
+      },
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        color: '#F3EFF5'
+      },
       headerRight: (
         <Button
           title="Settings"
           onPress = { () => props.navigation.navigate('settings')}
           backgroundColor = "rgba(0,0,0,0)"
-          color="rgba(0,125,255,1)"
+          color="#F3EFF5"
         />),
       style: {
-        marginTop: Platform.OS === 'android' ? 24 : 0
+        marginTop: Platform.OS === 'android' ? 24 : 0,
       }
     };
   }
